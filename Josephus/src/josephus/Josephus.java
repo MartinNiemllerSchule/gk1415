@@ -14,19 +14,12 @@ public class Josephus {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // zwei Person anlegen und probieren, wie auf die Personen zugegriffen werden kann
-  	// Person ist die Klasse und p und q sind Instanzen dieser Klasse (also Objekte)
-  	// auf "public" Eigenschaften kann man von außen (also hier) zugreifen
+    // Personen anlegen
     Person p = new Person(1);
-    Person q = new Person(2);
-    p.nächste = p;
-    p.vorherige = p;
-    p.nächste = q;
-    p.vorherige = q;
-    q.nächste = p;
-    q.vorherige = p;
-        
+    for (int i = 2; i <= 41; i++) {
+      p.einfügen(i);
+    }
+    
     System.out.println("p hat Nr:" + p.nummer + " Nachfolger ist Nr: " + p.nächste.nummer + " Das Schwert hat Nr: " + p.nächste.nächste.nummer + " tod ist Nr: " + p.nächste.nächste.nächste.nummer);
-    System.out.println("q hat Nr:" + q.nummer);
   }
 }

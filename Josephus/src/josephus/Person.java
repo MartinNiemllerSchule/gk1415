@@ -16,7 +16,15 @@ public class Person {
   
   public Person(Integer nr){
     nummer = nr;
-    nächste = null;
-    vorherige = null;
+    nächste = this;
+    vorherige = this;
+  }
+  
+  public void einfügen(Integer nr) {
+    Person r = new Person(nr);
+    r.nächste = this;
+    r.vorherige = vorherige;
+    vorherige.nächste = r;
+    vorherige = r;
   }
 }
