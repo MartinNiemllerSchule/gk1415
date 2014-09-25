@@ -20,6 +20,10 @@ public class Josephus {
       p.einfügen(i);
     }
     
-    System.out.println("p hat Nr:" + p.nummer + " Nachfolger ist Nr: " + p.nächste.nummer + " Das Schwert hat Nr: " + p.nächste.nächste.nummer + " tod ist Nr: " + p.nächste.nächste.nächste.nummer);
+    while (p != p.nächste) {
+      p.entferne(); // töte den Nächsten
+      p.ausgeben(); // gib alle Nummern der Personen im Ring aus
+      p = p.nächste.nächste; // übergib das Schwert an den nun Übernächsten
+    }
   }
 }
