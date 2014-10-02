@@ -47,7 +47,8 @@ public class Person {
   public void ausgeben() {
     Person aktuell = this;
     System.out.print(" " + aktuell.nummer);
-    while (aktuell != p.vorherige) {
+    while (aktuell != vorherige) {
+      // solange die Person nicht die letzte Person im Ring erreicht wurde
       aktuell = aktuell.nächste;
       System.out.print(" "+aktuell.nummer);
     }
