@@ -9,8 +9,8 @@ package primzahl2;
  * @author frank.baethge
  */
 public class PrimzahlListe {
-  public int pz; // speichert die jeweilige Primzahl ab
-  public PrimzahlListe nächste; // zeigt auf das nächste Listenelement
+  private int pz; // speichert die jeweilige Primzahl ab
+  private PrimzahlListe nächste; // zeigt auf das nächste Listenelement
   
   // Konstruktor
   public PrimzahlListe() {
