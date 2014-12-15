@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$processing$/library.iml" filepath="$processing$/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/mergeSortProcessing/mergeSortProcessing.iml" filepath="$PROJECT_DIR$/mergeSortProcessing/mergeSortProcessing.iml" />
     </modules>
   </component>
